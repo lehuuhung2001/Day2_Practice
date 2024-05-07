@@ -1,0 +1,98 @@
+:root{
+--primary-color: #6b0101;
+--secondery-color: #303230;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    height: 100vh;
+    background: #097102;
+    display: flex;
+    overflow: hidden;
+}
+.card_main{
+    height: 400px;
+    width: 280px;
+    margin: auto;
+    background-color:#303230;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card_image{
+    margin: 20px;
+    border-radius: 50%;
+}
+.card_image img{
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #6b0101;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.card_name{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.card_job{
+    color:var(--primary-color);
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 5px;
+    
+}
+.card_categories{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+   
+}
+.card_categories i {
+    margin: auto;
+    cursor: pointer;
+}
+.card_categories i:hover{
+    color: var(--primary-color);
+}
+
+.card_button{
+    
+}
+.card_button button{
+    margin-top: 50px;
+    height: 40px;
+    width:100px;
+    color: white;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+.card_image :hover{
+    height: 400px;
+    width: 280px;
+    border: none;
+    border-radius:unset;
+    margin:unset;
+    margin: -20px;
+    overflow: hidden;
+    
+}
+
+.card_button :hover {
+    background-color: var(--primary-color);
+}
+
